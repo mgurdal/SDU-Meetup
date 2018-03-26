@@ -61,3 +61,7 @@ class DashboardDataTable(LoginRequiredMixin, View):
             )
         return JsonResponse(datatable_data)
 
+class SigninWebSite(LoginRequiredMixin, TemplateView):
+
+    template_name = 'login.html'
+
